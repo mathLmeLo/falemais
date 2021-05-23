@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],      
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "strict": false,
+    "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],       
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,     
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@common/*": [
+        "./src/common/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "@docs/*": [
+        "./src/docs/*",
+        "./src/modules/pricing/infra/docs/*.ts",
+        "./src/modules/areaCode/infra/docs/*.ts"    
+      ],
+      "@entities/*": [
+        "./src/modules/pricing/infra/typeorm/entities/*.ts",
+        "./src/modules/areaCode/infra/typeorm/entities/*.ts"
+      ],
+      "@routes/*": [
+        "./src/modules/pricing/infra/http/routes/*.ts",
+        "./src/modules/areaCode/infra/http/routes/*.ts"
+      ],
+      "@factories/*": ["./src/config/factories/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

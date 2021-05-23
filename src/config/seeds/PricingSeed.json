@@ -1,0 +1,31 @@
+[{
+  "origin": "011",
+  "destination": "016",
+  "price": 1.9,
+  "enabled": true
+}, {
+  "origin": "016",
+  "destination": "011",
+  "price": 2.9,
+  "enabled": true
+}, {
+  "origin": "011",
+  "destination": "017",
+  "price": 1.7,
+  "enabled": true
+}, {
+  "origin": "017",
+  "destination": "011",
+  "price": 2.7,
+  "enabled": true
+}, {
+  "origin": "011",
+  "destination": "018",
+  "price": 0.9,
+  "enabled": true
+}, {
+  "origin": "018",
+  "destination": "011",
+  "price": 1.9,
+  "enabled": true
+}]

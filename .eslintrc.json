@@ -1,0 +1,91 @@
+{
+    "env": {
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "airbnb-base",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module",
+      "project": "./tsconfig.json",
+      "tsconfigRootDir": "./"
+    },
+    "plugins": [
+      "@typescript-eslint",
+      "import"
+    ],
+    "rules": {
+      "no-nested-ternary": "off",
+      "newline-per-chained-call": "off",
+      "no-underscore-dangle": "off",
+      // we only want single quotes
+      "quotes": ["error", "single"],
+      // we want to force semicolons
+      "semi": ["error", "always"],
+      // we use 2 spaces to indent our code
+      "indent": "off",
+      "@typescript-eslint/indent": [
+          "error",
+          2
+      ],
+      "no-tabs": "error",
+      // we want to avoid useless spaces
+      "no-multi-spaces": ["error"],
+  
+      "import/order": "off",
+      "max-len": "off",
+      "padded-blocks": "off",
+      "dot-notation": "off",
+      "object-curly-newline": "off",
+      "class-methods-use-this": "off",
+      "no-param-reassign": "off",
+      "no-console": "off",
+      "no-useless-constructor": "off",
+      "array-callback-return": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "_"
+        }
+      ],
+      "import/extensions": [
+        "error",
+        "always",
+        {
+          "ts": "never",
+          "tsx": "never",
+          "js": "never",
+          "jsx": "never"
+        }
+      ],
+      "@typescript-eslint/ban-types": [
+        "error",
+        {
+          "types": {
+            "object": false,
+            "Object": false
+          }
+        }
+      ]
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx",
+            ".json",
+            ".vue"
+          ]
+        },
+        "typescript": {}
+      }
+    }
+  }
+  
