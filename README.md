@@ -1,6 +1,6 @@
-# REST API Desafio FaleMais Vortx
+# REST API
 
-Esta é uma REST API para o problema proposto no desafio "Produto FaleMais" da Seleção da Vortx.
+Esta é uma REST API para o problema proposto no desafio "Produto FaleMais".
 
 Toda a aplicação está contida dentro do arquivo `src/common/infra/http/app`
 E seus modulos, rotas, controlles e services, estão contidos debaixo da pasta `src`.
